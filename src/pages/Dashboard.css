@@ -1,0 +1,263 @@
+.dashboard {
+  padding: 60px 0 100px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-name {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 219, 232, 0.06);
+  border: 1px solid rgba(255, 219, 232, 0.15);
+  border-radius: 999px;
+  padding: 12px 20px;
+}
+
+.streak-flame {
+  font-size: 1.3rem;
+}
+
+.streak-count {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--accent-soft);
+}
+
+.streak-label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: rgba(255, 219, 232, 0.04);
+  border: 1px solid rgba(255, 219, 232, 0.1);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+.dashboard-card-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+.dashboard-card-xp {
+  grid-column: span 3;
+}
+
+.dashboard-card-radar {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-card-quests {
+  grid-column: span 1;
+}
+
+.dashboard-card-coach {
+  grid-column: span 1;
+}
+
+.dashboard-card-achievements {
+  grid-column: span 3;
+}
+
+/* ---------- XP Bar ---------- */
+.xp-bar-wrap {
+  width: 100%;
+}
+
+.xp-bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.xp-level {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--accent-soft);
+}
+
+.xp-title {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.xp-bar-track {
+  height: 10px;
+  background: rgba(255, 219, 232, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.xp-bar-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* ---------- Quest list ---------- */
+.quest-panel-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  margin-bottom: 14px;
+}
+
+.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quest-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 219, 232, 0.04);
+  border: 1px solid rgba(255, 219, 232, 0.1);
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-align: left;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.quest-row.is-done {
+  opacity: 0.5;
+}
+
+.quest-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 219, 232, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--accent-soft);
+  flex-shrink: 0;
+}
+
+.quest-label {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.quest-xp {
+  font-size: 0.8rem;
+  color: var(--accent-soft);
+  flex-shrink: 0;
+}
+
+.quest-divider {
+  height: 1px;
+  background: rgba(255, 219, 232, 0.1);
+  margin: 20px 0;
+}
+
+.weekly-quest-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weekly-quest-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+/* ---------- Coach note ---------- */
+.coach-note {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  font-style: italic;
+}
+
+/* ---------- Achievements ---------- */
+.achievement-shelf {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.achievement-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100px;
+  padding: 16px 10px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 219, 232, 0.03);
+  border: 1px solid rgba(255, 219, 232, 0.08);
+  opacity: 0.45;
+  text-align: center;
+}
+
+.achievement-badge.is-unlocked {
+  opacity: 1;
+  border-color: rgba(255, 148, 178, 0.3);
+  background: rgba(255, 148, 178, 0.06);
+}
+
+.achievement-icon {
+  font-size: 1.8rem;
+}
+
+.achievement-label {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-card-xp,
+  .dashboard-card-radar,
+  .dashboard-card-quests,
+  .dashboard-card-coach,
+  .dashboard-card-achievements {
+    grid-column: span 1;
+  }
+}

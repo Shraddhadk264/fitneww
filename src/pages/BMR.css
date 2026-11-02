@@ -1,0 +1,323 @@
+.bmr-page-hero {
+  padding: 60px 0 20px;
+}
+
+.bmr-page-heading {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  text-transform: uppercase;
+  margin: 12px 0 12px;
+}
+
+.bmr-page-body {
+  padding: 40px 0 100px;
+}
+
+.bmr-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.bmr-page-card {
+  background: rgba(255, 219, 232, 0.04);
+  border: 1px solid rgba(255, 219, 232, 0.1);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+/* ---------- Calculator form ---------- */
+.bmr-calc-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.bmr-calc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.bmr-calc-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.bmr-calc-full {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.bmr-calc-form input,
+.bmr-calc-form select {
+  background: rgba(255, 219, 232, 0.05);
+  border: 1px solid rgba(255, 219, 232, 0.15);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--highlight);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.bmr-calc-form input:focus,
+.bmr-calc-form select:focus {
+  outline: none;
+  border-color: var(--accent-soft);
+}
+
+.bmr-calc-submit {
+  width: 100%;
+}
+
+/* ---------- BMR result panel ---------- */
+.bmr-result-panel {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 219, 232, 0.1);
+}
+
+.bmr-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.bmr-result-label {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.bmr-result-value {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--accent-soft);
+}
+
+.bmr-result-divider {
+  height: 1px;
+  background: rgba(255, 219, 232, 0.1);
+  margin: 16px 0;
+}
+
+.bmr-result-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.bmr-result-range strong {
+  color: var(--highlight);
+  opacity: 1;
+}
+
+/* ---------- Tracker summary ---------- */
+.tracker-summary {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.calorie-ring {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.calorie-ring svg {
+  position: absolute;
+  inset: 0;
+}
+
+.calorie-ring-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calorie-ring-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--accent-soft);
+}
+
+.calorie-ring-goal {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.tracker-macros {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.macro-bar-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+.tracker-streak-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 219, 232, 0.04);
+  border: 1px solid rgba(255, 219, 232, 0.1);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.tracker-streak-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.tracker-streak-card p {
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+/* ---------- Meal log ---------- */
+.meal-log {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.meal-log-group {
+  background: rgba(255, 219, 232, 0.03);
+  border: 1px solid rgba(255, 219, 232, 0.08);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+}
+
+.meal-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-log-header h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.meal-log-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.meal-log-add-btn {
+  background: rgba(242, 68, 85, 0.15);
+  color: var(--accent-soft);
+  border: 1px solid rgba(242, 68, 85, 0.3);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+.meal-log-empty {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-top: 12px;
+}
+
+.meal-log-items {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meal-log-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 219, 232, 0.06);
+}
+
+.meal-log-item-cal {
+  opacity: 0.6;
+}
+
+/* ---------- Add food modal ---------- */
+.add-food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-food-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.add-food-form input {
+  background: rgba(255, 219, 232, 0.05);
+  border: 1px solid rgba(255, 219, 232, 0.15);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--highlight);
+  font-size: 0.95rem;
+}
+
+.add-food-macros-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.add-food-note {
+  font-size: 0.78rem;
+  opacity: 0.55;
+  font-style: italic;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .bmr-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bmr-calc-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-food-macros-row {
+    grid-template-columns: 1fr;
+  }
+}
